@@ -231,7 +231,24 @@ Zepto(function($){
 **/
 
 
- 
+ //监测是否滑到底部 --ios下的ifame中使用此监测时间
+/**function change() {
+	
+    //var y = document.scrollingElement.scrollTop
+    // or
+    // var y = window.pageYOffset
+    //var ratio = Math.min(0.8, y / 100)
+    //topnode.style.opacity = ratio
+
+	 if(($(window).scrollTop()+$(window).height() > $(document).height()-10)){
+		// alert(111);
+		    $("#pageNo").val(parseInt($("#pageNo").val())+1);
+		 	query("00");//数据加载
+	       }
+
+}
+document.addEventListener('touchmove', change);
+*/
 
 
 </script>
